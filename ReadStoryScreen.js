@@ -84,7 +84,7 @@ export default class ReadStoryScreen extends React.Component {
             />
           </View>
           
-          <FlatList
+          <FlatList>
                 data={this.state.search === "" ?  this.state.allStories: this.state.dataSource}
                 //renderItem={({ item }) => (
                 //renderItem={( item ) => (
@@ -96,7 +96,7 @@ export default class ReadStoryScreen extends React.Component {
                   </View>
                 )}
                 keyExtractor={(item, index) => index.toString()}
-                /> 
+            </FlatList>
           
           
           
